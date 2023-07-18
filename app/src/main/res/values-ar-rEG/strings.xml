@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اللحظات السعيدة</string>
+    <string name="edit_text_hint_title">العنوان</string>
+    <string name="edit_text_hint_description">الوصف</string>
+    <string name="edit_text_hint_date">الموعد</string>
+    <string name="edit_text_hint_location">الموقع</string>
+    <string name="text_add_image">إضافة صورة</string>
+    <string name="btn_text_save">حفظ</string>
+    <string name="note_text_no_happy_places_found_yet_kindly_add_one">لا يوجد لحظات سعيدة تم تسجيلها</string>
+    <string name="image_content_description">صورة</string>
+    <string name="hello_blank_fragment">مرحبًا</string>
+    <string name="notification">إشعارات</string>
+    <string name="new_task">جديد</string>
+    <string name="completed">مكتمل</string>
+    <string name="documented_happy_place" >توثيق اليوم السعيد</string>
+    <string name="entertainment_planning">التخطيط للترفيه </string>
+    <string name="due_date">الموعد</string>
+    <string name="Home_page">الصفحة الرئيسية</string>
+    <string name="dates">المواعيد</string>
+    <string name="completed_tasks">"الخطط المكتملة "</string>
+    <string name="dateplan">إن كنت تريد التخطيط لموعد جديد
+        عليك بالضغط على جرس الإضافة في الأسفل.</string>
+
+
+
+</resources>

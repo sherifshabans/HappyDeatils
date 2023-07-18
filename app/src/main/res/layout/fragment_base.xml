@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        tools:context=".presentation.fragments.BaseFragment">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/tasksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dates"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:textSize="20sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/wait"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:lottie_fileName="waiting.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:visibility="visible"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tasksRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:paddingBottom="15dp"
+                android:clipToPadding="false" />
+
+
+
+            <TextView
+                android:id="@+id/textwait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dateplan"
+                android:textAllCaps="true"
+
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="#808080"
+                android:textSize="20sp"
+
+                android:visibility="gone"
+                tools:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ic_baseline_add_alert_24" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

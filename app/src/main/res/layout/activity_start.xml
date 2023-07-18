@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+android:layout_weight="1"
+    tools:context=".StartActivity"
+android:layout_gravity="center_vertical"
+    >
+<!--
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_start"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/CustomToolbarStyle"/>
+
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        tools:ignore="MissingConstraints">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/intend"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="intend.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+        <Button
+            android:id="@+id/plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/backlogin"
+            android:gravity="center_horizontal"
+            android:text="@string/entertainment_planning"
+            android:padding="10dp"
+
+            android:textColor="#F2ECE1"
+            android:textSize="@dimen/detail_screen_location_text_size"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:ignore="MissingConstraints">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/happy"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="happy.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+
+    <Button
+        android:id="@+id/document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/backlogin"
+            android:gravity="center_horizontal"
+            android:text="@string/documented_happy_place"
+            android:textColor="#F2ECE1"
+             android:padding="10dp"
+
+            android:textSize="@dimen/detail_screen_location_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
